@@ -16,6 +16,9 @@ public class MMPracticals {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        System.out.println("all processes in memory:");
+        
     }
     
 }
