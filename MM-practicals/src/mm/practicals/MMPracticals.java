@@ -5,6 +5,7 @@
  */
 package mm.practicals;
 import java.util.Arrays;
+import java.util.Scanner;
 /**
  *
  * @author Hein
@@ -16,7 +17,7 @@ public class MMPracticals {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+        Scanner input = new Scanner(System.in);
         System.out.println("all processes in memory:");
         String[] arrmem = new String[9];
         arrmem[0] = "A";
@@ -28,6 +29,11 @@ public class MMPracticals {
         arrmem[6] = "G";
         arrmem[7] = "H";
         arrmem[8] = "I";
+        System.out.println(Arrays.toString(arrmem));     
+        System.out.println("Enter process to remove: ");
+        String in = input.nextLine();
+        
+        
     }
     
 }
