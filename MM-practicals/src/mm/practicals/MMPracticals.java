@@ -18,6 +18,9 @@ public class MMPracticals {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
+        boolean check =false;
+        int i =0;
+        
         System.out.println("all processes in memory:");
         String[] arrmem = new String[9];
         arrmem[0] = "A";
@@ -32,6 +35,15 @@ public class MMPracticals {
         System.out.println(Arrays.toString(arrmem));     
         System.out.println("Enter process to remove: ");
         String in = input.nextLine();
+        
+        while(check == false || i <= arrmem.length)
+        {
+           if(arrmem[i] == in)
+           {
+               check = true;
+           }
+        }
+        
         
         
     }
