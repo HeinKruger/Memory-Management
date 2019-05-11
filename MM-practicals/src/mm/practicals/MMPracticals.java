@@ -36,14 +36,19 @@ public class MMPracticals {
         System.out.println("Enter process to remove: ");
         String in = input.nextLine();
         
-        while(check == false || i <= arrmem.length)
+        for(int j = 0; j < arrmem.length;j++)
         {
-           if(arrmem[i] == in)
-           {
-               check = true;
-           }
+            if(arrmem[j] == in)
+            {
+            arrmem[j] = " ";
+            break;
+            }
+            
         }
         
+        
+        System.out.println("Array after element is removed");
+        System.out.println(Arrays.toString(arrmem));
         
         
     }
