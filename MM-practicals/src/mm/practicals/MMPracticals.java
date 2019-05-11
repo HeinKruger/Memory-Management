@@ -35,10 +35,12 @@ public class MMPracticals {
         System.out.println(Arrays.toString(arrmem));     
         System.out.println("Enter process to remove: ");
         String in = input.nextLine();
+        System.out.println(in);
         
+       
         for(int j = 0; j < arrmem.length;j++)
         {
-            if(arrmem[j] == in)
+            if(arrmem[j].equals(in))
             {
             arrmem[j] = " ";
             break;
