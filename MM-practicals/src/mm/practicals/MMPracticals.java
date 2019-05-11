@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package mm.practicals;
-
+import java.util.Arrays;
 /**
  *
  * @author Hein
@@ -18,7 +18,16 @@ public class MMPracticals {
         // TODO code application logic here
         
         System.out.println("all processes in memory:");
-        
+        String[] arrmem = new String[9];
+        arrmem[0] = "A";
+        arrmem[1] = "B";
+        arrmem[2] = "C";
+        arrmem[3] = "D";
+        arrmem[4] = "E";
+        arrmem[5] = "F";
+        arrmem[6] = "G";
+        arrmem[7] = "H";
+        arrmem[8] = "I";
     }
     
 }
