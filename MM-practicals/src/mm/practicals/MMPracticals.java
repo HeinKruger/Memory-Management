@@ -47,12 +47,34 @@ public class MMPracticals {
             }
             
         }
+        System.out.println("Enter process to remove: ");
+          in = input.nextLine();
         
-        
+         for(int j = 0; j < arrmem.length;j++)
+        {
+            if(arrmem[j].equals(in))
+            {
+            arrmem[j] = " ";
+            break;
+            }
+            
+        }
         System.out.println("Array after element is removed");
         System.out.println(Arrays.toString(arrmem));
         
+        System.out.println("Enter a new process to add");
+        in = input.nextLine();
         
+        for(int j = 0; j < arrmem.length;j++)
+        {
+            if(arrmem[j].equals(" "))
+            {
+            arrmem[j] = in;
+            break;
+            }
+            
+        }
+        System.out.println(Arrays.toString(arrmem));
     }
     
 }
